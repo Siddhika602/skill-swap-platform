@@ -1,0 +1,131 @@
+.myrequests-container {
+  min-height: 100vh;
+  padding: 50px;
+
+  background:
+    radial-gradient(circle at top left, #4338ca 0%, transparent 35%),
+    radial-gradient(circle at bottom right, #2563eb 0%, transparent 30%),
+    linear-gradient(135deg, #020617, #0f172a, #1e1b4b);
+
+  color: white;
+}
+
+.page-title {
+  font-size: 42px;
+  margin-bottom: 35px;
+}
+
+.request-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+  gap: 25px;
+}
+
+.request-card {
+  background: rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  border-radius: 22px;
+
+  padding: 28px;
+
+  transition: 0.3s;
+}
+
+.request-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 32px;
+
+  margin-bottom: 18px;
+
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #7c3aed
+  );
+}
+
+.request-card h2 {
+  margin-bottom: 8px;
+}
+
+.email {
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+.info-box {
+  margin-bottom: 18px;
+
+  padding: 12px;
+
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.info-box span {
+  color: #dbeafe;
+}
+
+.status {
+  margin-top: 15px;
+
+  width: fit-content;
+
+  padding: 8px 18px;
+
+  border-radius: 30px;
+
+  font-weight: bold;
+}
+
+.pending {
+  background: rgba(250, 204, 21, 0.2);
+  color: #facc15;
+}
+
+.accepted {
+  background: rgba(34, 197, 94, 0.2);
+  color: #22c55e;
+}
+
+.rejected {
+  background: rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+}
+
+.empty-card {
+  max-width: 500px;
+
+  margin: 80px auto;
+
+  text-align: center;
+
+  padding: 40px;
+
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(15px);
+}

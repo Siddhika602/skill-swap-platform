@@ -1,0 +1,89 @@
+.search-section {
+  width: 90%;
+  max-width: 1100px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.search-section h2 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.search-section p {
+  color: #bdbdbd;
+  font-size: 18px;
+  margin-bottom: 35px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.search-box input {
+  width: 500px;
+  max-width: 90%;
+
+  padding: 18px;
+
+  border-radius: 50px;
+
+  border: 1px solid rgba(255,255,255,.1);
+
+  background: rgba(255,255,255,.05);
+
+  color: white;
+
+  outline: none;
+
+  backdrop-filter: blur(15px);
+}
+
+.search-box button {
+  padding: 18px 32px;
+
+  border: none;
+
+  border-radius: 50px;
+
+  cursor: pointer;
+
+  background: linear-gradient(135deg,#2563eb,#7c3aed);
+
+  color: white;
+
+  font-weight: bold;
+}
+
+.skill-chips {
+  margin-top: 35px;
+
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 15px;
+}
+
+.skill-chips span {
+  padding: 12px 22px;
+
+  border-radius: 30px;
+
+  background: rgba(255,255,255,.05);
+
+  border: 1px solid rgba(255,255,255,.08);
+
+  transition: .3s;
+
+  cursor: pointer;
+}
+
+.skill-chips span:hover {
+  background: #7c3aed;
+}

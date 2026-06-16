@@ -1,0 +1,96 @@
+.received-container {
+  min-height: 100vh;
+  padding: 40px;
+  color: white;
+}
+
+.received-title {
+  font-size: 42px;
+  margin-bottom: 35px;
+}
+
+.received-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 25px;
+}
+
+.received-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 24px;
+  transition: 0.3s;
+}
+
+.received-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.received-card h2 {
+  margin-bottom: 10px;
+}
+
+.email {
+  color: #cbd5e1;
+  margin-bottom: 15px;
+}
+
+.status {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.status.pending {
+  color: orange;
+}
+
+.status.accepted {
+  color: #22c55e;
+}
+
+.status.rejected {
+  color: #ef4444;
+}
+
+.btn-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.accept-btn,
+.reject-btn {
+  flex: 1;
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.accept-btn {
+  background: linear-gradient(90deg, #16a34a, #22c55e);
+}
+
+.reject-btn {
+  background: linear-gradient(90deg, #dc2626, #ef4444);
+}
+
+.accept-btn:hover,
+.reject-btn:hover {
+  transform: scale(1.03);
+}
+
+.empty-card {
+  margin-top: 40px;
+  padding: 40px;
+  text-align: center;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(15px);
+}

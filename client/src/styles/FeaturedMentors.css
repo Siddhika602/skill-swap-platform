@@ -1,0 +1,231 @@
+.mentors-section {
+
+  width: 90%;
+
+  max-width: 1250px;
+
+  margin: 120px auto;
+
+  text-align: center;
+
+}
+
+.mentors-section h2 {
+
+  font-size: 52px;
+
+  margin-bottom: 15px;
+
+}
+
+.mentors-section p {
+
+  color: #bdbdbd;
+
+  margin-bottom: 60px;
+
+  font-size: 18px;
+
+}
+
+.mentor-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+  gap: 35px;
+
+}
+
+.mentor-card {
+
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 30px;
+
+  border-radius: 24px;
+
+  background: rgba(255,255,255,.05);
+
+  backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255,255,255,.08);
+
+  transition: .35s;
+
+}
+
+.mentor-card::before{
+
+content:"";
+
+position:absolute;
+
+left:-50%;
+
+top:-50%;
+
+width:220px;
+
+height:220px;
+
+background:radial-gradient(#7c3aed,transparent);
+
+opacity:.18;
+
+transition:.4s;
+
+}
+
+.mentor-card:hover::before{
+
+transform:scale(1.8);
+
+}
+
+.mentor-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 0 35px rgba(124,58,237,.25);
+
+}
+
+.mentor-top{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:20px;
+
+}
+
+.image-box{
+
+position:relative;
+
+}
+
+.image-box img{
+
+width:90px;
+
+height:90px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:3px solid #7c3aed;
+
+}
+
+.online-dot{
+
+position:absolute;
+
+right:5px;
+
+bottom:5px;
+
+width:15px;
+
+height:15px;
+
+background:#22c55e;
+
+border-radius:50%;
+
+border:2px solid white;
+
+}
+
+.mentor-badge{
+
+padding:8px 14px;
+
+border-radius:30px;
+
+background:linear-gradient(90deg,#2563eb,#7c3aed);
+
+font-size:13px;
+
+}
+
+.mentor-card h3{
+
+margin-top:15px;
+
+font-size:28px;
+
+}
+
+.mentor-role{
+
+margin-top:8px;
+
+color:#bdbdbd;
+
+}
+
+.mentor-skills{
+
+display:flex;
+
+justify-content:center;
+
+gap:10px;
+
+flex-wrap:wrap;
+
+margin:25px 0;
+
+}
+
+.mentor-skills span{
+
+padding:8px 14px;
+
+border-radius:30px;
+
+background:rgba(255,255,255,.06);
+
+border:1px solid rgba(255,255,255,.08);
+
+font-size:14px;
+
+}
+
+.mentor-footer{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-top:25px;
+
+}
+
+.mentor-footer button{
+
+border:none;
+
+padding:11px 22px;
+
+border-radius:30px;
+
+cursor:pointer;
+
+background:linear-gradient(90deg,#2563eb,#7c3aed);
+
+color:white;
+
+}
